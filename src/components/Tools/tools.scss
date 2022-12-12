@@ -1,0 +1,40 @@
+.tools {
+  padding-top: 100px;
+  background: #1e252b;
+  .title {
+    display: flex;
+    justify-content: center;
+  }
+  .description {
+    display: flex;
+    justify-content: center;
+  }
+  &__load {
+    margin-left: 50%;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ff6e30;
+    background: #1e252b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 17px 38px;
+    transition: 0.3s;
+    &:hover {
+      transition: 0.3s;
+      cursor: pointer;
+      color: #1e252b;
+      background: #ff6e30;
+    }
+  }
+
+  .tool__wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 25px;
+  }
+}

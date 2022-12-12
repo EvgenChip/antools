@@ -1,0 +1,82 @@
+.tool {
+  &__card {
+    padding: 33px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:hover {
+      background: rgba(40, 48, 54, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      &::before {
+        content: "";
+        transition: 0.3s;
+        width: 65px;
+        height: 65px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: 0.2s;
+        background: rgba(255, 110, 48, 0.6);
+        filter: blur(25px);
+      }
+
+      .button {
+        transition: 0.3s;
+        background: #ff6e30;
+        &:hover {
+          background: forestgreen;
+        }
+      }
+    }
+    &-top {
+      display: flex;
+      column-gap: 30px;
+    }
+
+    &-title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: rgba(255, 255, 255, 0.78);
+      padding-bottom: 3px;
+    }
+    &-subscription {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: rgba(255, 165, 55, 0.55);
+    }
+
+    &-description {
+      padding: 30px 0;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-icons {
+      display: flex;
+      column-gap: 15px;
+      :hover {
+        background: #283036;
+        box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}
