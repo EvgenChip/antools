@@ -8,6 +8,10 @@ import { useCallback, useState } from "react";
 import { SignUp } from "./components/HomePage/Authorization/SignUp";
 import { Tools } from "./components/Tools/Tools";
 import { Partners } from "./components/Partners/Partners";
+import { NewcomerTools } from "./components/NewcomerTools/NewcomerTools";
+import { Review, Slider } from "./components/review/Review";
+import { Footer } from "./components/Footer/Footer";
+import { Request } from "./components/Request/Request";
 
 function App() {
   const [loginActive, setLoginActive] = useState(false);
@@ -51,6 +55,10 @@ function App() {
 
       <Tools />
       <Partners />
+      <NewcomerTools />
+      <Review />
+      <Request />
+      <Footer />
     </div>
   );
 }

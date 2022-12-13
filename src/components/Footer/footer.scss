@@ -1,0 +1,55 @@
+.footer {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background: #1e252b;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  h3 {
+    color: azure;
+  }
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(255, 255, 255, 0.55);
+  }
+  li {
+    color: transparent;
+  }
+  a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  &__logo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

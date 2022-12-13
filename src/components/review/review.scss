@@ -1,0 +1,29 @@
+.review {
+  padding-top: 200px;
+  background: #1e252b;
+  padding-bottom: 200px;
+
+
+  &__slider-text {
+    padding-left: 50px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+
+    letter-spacing: 0.015em;
+
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  &__slider-img{
+    width: 10px;
+    height: 50%;
+  }
+}
+
+.mySwiper {
+  padding-right: 100px;
+  padding-left: 100px;
+}

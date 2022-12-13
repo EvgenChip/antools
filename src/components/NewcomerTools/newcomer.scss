@@ -1,0 +1,14 @@
+.newcomer-tools {
+  padding-top: 200px;
+  background: #1e252b;
+
+&__inner{
+    display: flex;
+    gap: 197px;
+}
+&__wrap{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 70px;
+}
+}
