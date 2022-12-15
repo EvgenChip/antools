@@ -20,10 +20,7 @@
   max-width: 497.66px;
 
   width: 100%;
-  img {
-    position: absolute;
-    margin-top: 22px;
-  }
+
   input {
     padding-left: 50px;
     background: transparent;
@@ -48,3 +45,8 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+.button{font-size: 13px }
+}
+

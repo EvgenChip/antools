@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 18px;
 
-  /* Center slide text vertically */
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -42,6 +42,7 @@
 }
 .swiper-button-next {
   color: #ff6e30;
+
 }
 .swiper-button-prev {
   color: #ff6e30;

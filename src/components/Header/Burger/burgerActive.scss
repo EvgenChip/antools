@@ -1,0 +1,38 @@
+.burger-active {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  z-index: 50;
+  background: #1e252b;
+  box-shadow: 0 0 10px rgba(214, 119, 10, 0.763);
+  border-radius: 4px;
+
+  li {
+    color: transparent;
+    text-decoration: none;
+    position: relative;
+  }
+
+  a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 24px;
+
+    color: rgba(255, 255, 255, 0.55);
+  }
+
+  &__menu {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

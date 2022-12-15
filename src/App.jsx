@@ -12,46 +12,27 @@ import { NewcomerTools } from "./components/NewcomerTools/NewcomerTools";
 import { Review, Slider } from "./components/review/Review";
 import { Footer } from "./components/Footer/Footer";
 import { Request } from "./components/Request/Request";
+import { useForm } from "./components/HomePage/Authorization/hooks/useAuthorization";
+import { useApp } from "./hooks/useApp";
 
 function App() {
-  const [loginActive, setLoginActive] = useState(false);
-  const stateLoginActive = () => {
-    setLoginActive(!loginActive);
-  };
-
-  const sendLoginForm = () => {
-    stateLoginActive();
-  };
-
-  const [signUpActive, setSignUpActive] = useState(false);
-  const stateSignUpActive = () => {
-    setSignUpActive(!signUpActive);
-  };
-
-  const sendSignUpForm = () => {
-    stateSignUpActive();
-  };
+  const { loginActive, signUpActive, stateLoginActive, stateSignUpActive } =
+    useApp();
 
   return (
     <div>
       <Header
-        stateSignUpActive={stateSignUpActive}
         stateLoginActive={stateLoginActive}
+        stateSignUpActive={stateSignUpActive}
       />
       <HomePage />
       {loginActive && (
         <Login
           stateLoginActive={stateLoginActive}
-          sendLoginForm={sendLoginForm}
+          //   sendLoginForm={sendLoginForm}
         />
       )}
-
-      {signUpActive && (
-        <SignUp
-          stateSignUpActive={stateSignUpActive}
-          sendSignUpForm={sendSignUpForm}
-        />
-      )}
+      {signUpActive && <SignUp stateSignUpActive={stateSignUpActive} />}
 
       <Tools />
       <Partners />

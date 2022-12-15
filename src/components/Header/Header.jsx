@@ -2,6 +2,7 @@ import React from "react";
 import "./header.scss";
 import logoIcon from "../../assets/image/logo.svg";
 import { Login } from "../HomePage/Authorization/LogIn";
+import { Burger } from "./Burger/Burger";
 
 export const Header = ({ stateLoginActive, stateSignUpActive }) => {
   return (
@@ -12,6 +13,7 @@ export const Header = ({ stateLoginActive, stateSignUpActive }) => {
             <img src={logoIcon} alt="" />
             <h1 className="logo_title">antools</h1>
           </div>
+          <Burger />
           <ul className="header__menu">
             <li className="header__item">
               <a className="header__link" href="">
@@ -35,10 +37,10 @@ export const Header = ({ stateLoginActive, stateSignUpActive }) => {
             </li>
           </ul>
           <div className="header__authorization">
-            <button onClick={() => stateLoginActive()} className="button">
+            <button onClick={stateLoginActive} className="button">
               Login
             </button>
-            <button onClick={() => stateSignUpActive()} className="button">
+            <button onClick={stateSignUpActive} className="button">
               Sign Up
             </button>
           </div>

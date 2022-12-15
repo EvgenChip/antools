@@ -53,3 +53,12 @@
     gap: 20px;
   }
 }
+
+@media (max-width: 870px) {
+  .footer__content {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 20px;
+  }
+}
+

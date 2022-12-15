@@ -81,3 +81,33 @@
     }
   }
 }
+
+@media (max-width: 927px) {
+  .tool {
+    &__card {
+      padding: 25px;
+    }
+    &__card-logo {
+      width: 35px;
+    }
+    &__card-title {
+      font-size: 18px;
+    }
+    &__card-subscription {
+      font-size: 15px;
+    }
+    &__card-description {
+      padding: 19px 0;
+      font-size: 13px;
+    }
+    .button {
+      padding: 8px 19px;
+    }
+  }
+}
+@media (max-width: 1145px) {
+}
+@media (max-width: 1145px) {
+}
+@media (max-width: 1145px) {
+}
