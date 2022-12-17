@@ -1,10 +1,13 @@
 .partners {
   padding-top: 200px;
   background: #1e252b;
+
   &__wrap {
     background: rgba(44, 53, 61, 0.2);
     backdrop-filter: blur(25px);
     border-radius: 25px;
+    overflow: hidden;
+
     &::before {
       content: "";
       transition: 0.3s;
@@ -17,9 +20,9 @@
       background: rgba(255, 110, 48, 0.4);
       filter: blur(35px);
     }
+
     .title {
       padding-top: 50px;
-
       text-align: center;
       font-family: "Poppins";
       font-style: normal;
@@ -57,10 +60,12 @@
         width: 100px;
       }
     }
+
     .partners__inner {
       padding: 30px 57px;
     }
   }
+
   @media (max-width: 654px) {
     .partners__wrap {
         .title {
@@ -68,11 +73,13 @@
           font-size: 16px;
         }
       }
+
       .partner {
         img {
           width: 80px;
         }
       }
+
       .partners__inner {
         padding: 22px 45px;
       }
@@ -85,11 +92,13 @@
           font-size: 16px;
         }
       }
+
       .partner {
         img {
           width: 60px;
         }
       }
+
       .partners__inner {
         padding: 12px 24px;
       }

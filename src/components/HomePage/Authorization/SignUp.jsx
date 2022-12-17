@@ -3,7 +3,8 @@ import "./authorization.scss";
 import { useAuthorization } from "./hooks/useAuthorization";
 export const SignUp = ({ stateSignUpActive }) => {
   const {
-    userName,
+    userPassword,
+    passwordDirty,
     email,
     phone,
     emailDirty,
@@ -12,11 +13,12 @@ export const SignUp = ({ stateSignUpActive }) => {
     phoneError,
     formValid,
     sendForm,
-    nameUserHandler,
+    userPasswordHandler,
     emailHandler,
     blurHandler,
     phoneHandler,
   } = useAuthorization();
+
   const getSignUp = () => {
     sendForm();
     stateSignUpActive();
@@ -51,11 +53,12 @@ export const SignUp = ({ stateSignUpActive }) => {
           <div className="password">
             <label for="password">Придумайте пароль</label>
             <input
-              value={userName}
-              onChange={nameUserHandler}
-              id="formName"
-              type="text"
-              name="name"
+              value={userPassword}
+              onChange={userPasswordHandler}
+              onBlur={blurHandler}
+              name="password"
+              id="password"
+              type="password"
             />
           </div>
           {emailDirty && emailError && (
@@ -63,6 +66,9 @@ export const SignUp = ({ stateSignUpActive }) => {
           )}
           {phoneDirty && phoneError && (
             <div className="emailError">{phoneError}</div>
+          )}
+          {userPassword.length < 6 && passwordDirty && (
+            <div className="emailError">Пароль должен быть более 6 знаков</div>
           )}
           <button
             disabled={!formValid}

@@ -2,6 +2,7 @@
   padding-top: 104px;
   background: #1e252b;
   position: relative;
+
   &::before {
     content: url(../../assets/image/Illustration.svg);
     position: absolute;
@@ -15,8 +16,8 @@
   background: #283036;
   border-radius: 15px;
   max-width: 497.66px;
-
   width: 100%;
+
   img {
     position: absolute;
     margin-top: 3px;
@@ -35,11 +36,13 @@
   .button_search {
     background: #ff6e30;
     transition: 0.5s;
+
     &:hover {
       transition: 0.5s;
-      border: solid 1px #ff6e30;
+      box-shadow: 0 0 10px rgba(214, 119, 10, 0.763);
       background: #283036;
     }
+
     &:active {
       transition: 0.1s;
       background: #d3bbb1;
@@ -51,14 +54,17 @@
   display: flex;
   padding-top: 120px;
   gap: 20px;
+
   img {
     width: 27px;
     height: 27px;
+    cursor: pointer;
   }
 }
 
 @media (max-width: 1100px) {
   .home-page {
+
     &::before {
       top: 76px;
     }
@@ -68,9 +74,11 @@
 @media (max-width: 772px) {
   .home-page {
     padding-top: 84px;
+
     &::before {
       display: none;
     }
+
     .title {
       font-size: 44px;
     }
@@ -79,6 +87,7 @@
 
 @media (max-width: 500px){
     .form{
+
         img{
             margin-right:358px
         }
@@ -86,6 +95,7 @@
 }
 @media (max-width: 450px){
     .form{
+
         img{
             margin-right:300px
         }

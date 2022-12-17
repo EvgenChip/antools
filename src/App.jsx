@@ -1,18 +1,15 @@
-import logo from "./logo.svg";
 import React from "react";
 import "./App.scss";
-import { Header } from "./components/Header/Header";
-import { HomePage } from "./components/HomePage/HomePage";
+import { Header } from "./components/Header";
+import { HomePage } from "./components/HomePage";
 import { Login } from "./components/HomePage/Authorization/LogIn";
-import { useCallback, useState } from "react";
 import { SignUp } from "./components/HomePage/Authorization/SignUp";
-import { Tools } from "./components/Tools/Tools";
-import { Partners } from "./components/Partners/Partners";
-import { NewcomerTools } from "./components/NewcomerTools/NewcomerTools";
-import { Review, Slider } from "./components/review/Review";
-import { Footer } from "./components/Footer/Footer";
-import { Request } from "./components/Request/Request";
-import { useForm } from "./components/HomePage/Authorization/hooks/useAuthorization";
+import { Tools } from "./components/Tools";
+import { Partners } from "./components/Partners";
+import { NewcomerTools } from "./components/NewcomerTools";
+import { Review } from "./components/Review";
+import { Footer } from "./components/Footer";
+import { Request } from "./components/Request";
 import { useApp } from "./hooks/useApp";
 
 function App() {
@@ -26,12 +23,7 @@ function App() {
         stateSignUpActive={stateSignUpActive}
       />
       <HomePage />
-      {loginActive && (
-        <Login
-          stateLoginActive={stateLoginActive}
-          //   sendLoginForm={sendLoginForm}
-        />
-      )}
+      {loginActive && <Login stateLoginActive={stateLoginActive} />}
       {signUpActive && <SignUp stateSignUpActive={stateSignUpActive} />}
 
       <Tools />

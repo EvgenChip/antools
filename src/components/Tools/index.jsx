@@ -7,6 +7,7 @@ import "./tools.scss";
 export const Tools = () => {
   const [group, setGroup] = useState(6);
   const products = PRODUCTS.slice(0, group);
+
   const displayProducts = useCallback(
     (product) => <Tool key={product.id} product={product} />,
     []

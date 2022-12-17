@@ -23,6 +23,7 @@
         display: inline;
         gap: 7px;
       }
+
       &__wrap {
         padding-top: 20px;
       }
@@ -34,7 +35,5 @@
       grid-template-columns: 80%;
       grid-row-gap: 70px;
     }
-  }
-  @media (max-width: 500px) {
   }
 }

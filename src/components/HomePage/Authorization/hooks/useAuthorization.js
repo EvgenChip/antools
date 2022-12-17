@@ -16,8 +16,10 @@ export const useAuthorization = () => {
   const [formValid, setFormValid] = useState(false);
 
   useEffect(() => {
-    emailError || phoneError ? setFormValid(false) : setFormValid(true);
-  }, [emailError, phoneError]);
+    emailError || phoneError || userPassword.length < 6
+      ? setFormValid(false)
+      : setFormValid(true);
+  }, [emailError, phoneError, userPassword]);
 
   useEffect(() => {
     emailError || userPassword.length < 6

@@ -3,6 +3,7 @@
   padding-top: 104px;
   background: #1e252b;
   padding-bottom: 240px;
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -18,7 +19,6 @@
   background: #283036;
   border-radius: 15px;
   max-width: 497.66px;
-
   width: 100%;
 
   input {
@@ -31,14 +31,17 @@
     color: #d3bbb1;
     appearance: none;
   }
+
   .button_search {
     background: #ff6e30;
     transition: 0.5s;
+
     &:hover {
       transition: 0.5s;
-      border: solid 1px #ff6e30;
+      box-shadow: 0 0 10px rgba(214, 119, 10, 0.763);
       background: #283036;
     }
+
     &:active {
       transition: 0.1s;
       background: #d3bbb1;
@@ -47,6 +50,6 @@
 }
 
 @media (max-width: 400px) {
-.button{font-size: 13px }
+    .button{font-size: 13px }
 }
 

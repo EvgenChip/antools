@@ -7,8 +7,6 @@
   padding-bottom: 100px;
   text-align: center;
   font-size: 18px;
-
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -29,9 +27,11 @@
   height: 50%;
   object-fit: cover;
 }
+
 .swiper-pagination {
   position: relative;
 }
+
 .swiper-pagination-bullet {
   width: 44px;
   border-radius: 4px;
@@ -40,13 +40,15 @@
 .swiper-pagination-bullet-active {
   color: rgb(0, 0, 0);
 }
+
 .swiper-button-next {
   color: #ff6e30;
-
 }
+
 .swiper-button-prev {
   color: #ff6e30;
 }
+
 .swiper-pagination-bullet-active {
   background: #ff6e30;
 }

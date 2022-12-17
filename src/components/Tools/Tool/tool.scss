@@ -10,6 +10,12 @@
       background: rgba(40, 48, 54, 0.6);
       backdrop-filter: blur(25px);
       border-radius: 15px;
+
+      .like-icon {
+        z-index: 30;
+        fill: #fe2222;
+      }
+
       &::before {
         content: "";
         transition: 0.3s;
@@ -26,11 +32,13 @@
       .button {
         transition: 0.3s;
         background: #ff6e30;
+
         &:hover {
           background: forestgreen;
         }
       }
     }
+
     &-top {
       display: flex;
       column-gap: 30px;
@@ -45,6 +53,7 @@
       color: rgba(255, 255, 255, 0.78);
       padding-bottom: 3px;
     }
+
     &-subscription {
       font-family: "Poppins";
       font-style: normal;
@@ -69,9 +78,11 @@
       justify-content: space-between;
       align-items: center;
     }
+
     &-icons {
       display: flex;
       column-gap: 15px;
+
       :hover {
         background: #283036;
         box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
@@ -87,27 +98,26 @@
     &__card {
       padding: 25px;
     }
+
     &__card-logo {
       width: 35px;
     }
+
     &__card-title {
       font-size: 18px;
     }
+
     &__card-subscription {
       font-size: 15px;
     }
+
     &__card-description {
       padding: 19px 0;
       font-size: 13px;
     }
+
     .button {
       padding: 8px 19px;
     }
   }
-}
-@media (max-width: 1145px) {
-}
-@media (max-width: 1145px) {
-}
-@media (max-width: 1145px) {
 }

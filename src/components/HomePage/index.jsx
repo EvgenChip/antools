@@ -5,7 +5,6 @@ import searchIcon from "../../assets/image/search.svg";
 import facebookIcon from "../../assets/image/facebookIcon.svg";
 import instagramIcon from "../../assets/image/instagramIcon.svg";
 import twitterIcon from "../../assets/image/twitterIcon.svg";
-import { Login } from "./Authorization/LogIn";
 
 export const HomePage = () => {
   return (

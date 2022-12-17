@@ -29,22 +29,22 @@ export const Footer = () => {
           <ul className="footer__categories">
             <h3 className="footer__categories-title">Categories</h3>
             <li>
-              <a href="">Design</a>
+              <a href="#">Design</a>
             </li>
             <li>
-              <a href="">Development</a>
+              <a href="#">Development</a>
             </li>
           </ul>
           <ul className="footer__company-info">
             <h3 className="footer__company-info-title">Company Info</h3>
             <li className="compony-info_about">
-              <a href="">About Us</a>
+              <a href="#">About Us</a>
             </li>
             <li className="compony-info_partners">
-              <a href="">Our Partners</a>
+              <a href="#">Our Partners</a>
             </li>
             <li className="company-info_blog">
-              <a href="">Blog</a>
+              <a href="#">Blog</a>
             </li>
           </ul>
         </div>

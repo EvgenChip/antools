@@ -1,14 +1,17 @@
 .tools {
   padding-top: 100px;
   background: #1e252b;
+
   .title {
     display: flex;
     justify-content: center;
   }
+
   .description {
     display: flex;
     justify-content: center;
   }
+
   &__load {
     margin-left: 50%;
     font-family: "Poppins";
@@ -22,6 +25,7 @@
     border-radius: 8px;
     padding: 17px 38px;
     transition: 0.3s;
+
     &:hover {
       transition: 0.3s;
       cursor: pointer;
@@ -42,6 +46,7 @@
     .tool__wrap {
       grid-template-columns: 40% 40%;
     }
+
     .tools__load {
       margin-left: 29%;
     }
@@ -52,27 +57,27 @@
         grid-template-columns: 40% 40%;
       }
     }
-    @media (max-width: 772px) {
-        .tool__wrap {
-            padding-top: 40px;
-            padding-bottom: 70px;
-            grid-template-columns: 70% ;
-          }
-.title{font-size: 40px;}
-.description{font-size: 14px;}
 
+  @media (max-width: 772px) {
+    .tool__wrap {
+        padding-top: 40px;
+        padding-bottom: 70px;
+        grid-template-columns: 70% ;
+    }
+    .title {
+        font-size: 40px;
+    }
 
-        }
+    .description {
+        font-size: 14px;
+    }
+  }
 
-
-
-        @media (max-width: 500px){
-            .tool__wrap {
-                padding-top: 40px;
-                padding-bottom: 70px;
-                grid-template-columns: 90% ;
-              }
-        }
-
-
+  @media (max-width: 500px){
+    .tool__wrap {
+        padding-top: 40px;
+        padding-bottom: 70px;
+        grid-template-columns: 90% ;
+    }
+  }
 }

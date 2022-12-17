@@ -59,7 +59,8 @@ z-index: 100;
   .button{
     &:disabled{
         color: #b04f0f;
-        background: none
+        background: none;
+        cursor: default;
     }
   }
 

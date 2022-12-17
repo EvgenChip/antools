@@ -2,16 +2,14 @@ import React, { useState } from "react";
 
 import "./burger.scss";
 import { BurgerActive } from "./BurgerActive";
+import { useBurger } from "./hooks/useBurger";
 
 export const Burger = () => {
-  const [active, setActive] = useState(false);
-  const displayBurger = () => {
-    setActive(!active);
-  };
+  const { displayBurger, activeBurger } = useBurger();
   return (
     <div className="burger">
-      {active && <BurgerActive />}
-      <div onClick={displayBurger} className="burger__menu">
+      {activeBurger && <BurgerActive />}
+      <div onClick={displayBurger} className="burger__menu" id="burger-menu">
         <span className="burger__line"></span>
       </div>
     </div>

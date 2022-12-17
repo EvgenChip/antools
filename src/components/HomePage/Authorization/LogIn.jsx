@@ -5,9 +5,7 @@ export const Login = ({ stateLoginActive }) => {
   const {
     userPassword,
     email,
-
     emailDirty,
-
     emailError,
     passwordDirty,
     loginValid,
@@ -16,6 +14,7 @@ export const Login = ({ stateLoginActive }) => {
     emailHandler,
     blurHandler,
   } = useAuthorization();
+
   const sendLoginForm = () => {
     sendForm();
     stateLoginActive();
